@@ -13,7 +13,7 @@ export default createGlobalStyle`
   }
 
   body, button, input {
-    font-family: ${({ theme }) => theme.FONTS.MAIN_TEXT};
+    font-family: ${({ theme }) => theme.FONT_FAMILY.MAIN_TEXT};
     font-size: ${({ theme }) => theme.FONT_SIZE.REGULAR};
     font-weight: 400;
 
@@ -21,7 +21,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.COLORS.DARK_400};
+    background: ${({ theme }) => theme.COLORS.DARK_400};
   }
 
   button:hover {
