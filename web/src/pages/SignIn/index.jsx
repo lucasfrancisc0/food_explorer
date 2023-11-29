@@ -3,13 +3,14 @@ import { Container, Brand, Form, Title, Section } from "./styles";
 import logo from '../../assets/logo.svg';
 import { Input } from "../../components/Input";
 
+import { Envelope, Lock } from "@phosphor-icons/react";
+
 
 export function SignIn() {
   return(
     <Container>
 
       <main>
-
         <Title>
           <Brand>
           <h1>Food explorer</h1>
@@ -20,17 +21,24 @@ export function SignIn() {
         </Title>
 
         <Section>
+          <h3>Faça seu login</h3>
+
           <Form>
-            <h3>Faça seu login</h3>
             <Input
-              
+              icon={Envelope}
               placeholder="E-mail"
               type="email"
               autoComplete="email"
             />
+
+            <Input
+              icon={Lock}
+              placeholder="Senha"
+              type="password"
+              autoComplete="password"
+            />
           </Form>
         </Section>
-
       </main>
 
     </Container>

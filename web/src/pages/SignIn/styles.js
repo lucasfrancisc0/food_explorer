@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {DEVICE_BREACKPOINTS } from "../../styles/deviceBreackpoints"
+import {DEVICE_BREACKPOINTS } from "../../styles/deviceBreackpoints";
 
 export const Container = styled.div`
   width: 100%;
@@ -31,6 +31,8 @@ export const Container = styled.div`
 export const Title = styled.div`
   width: 100%;
 
+  margin-bottom: 7.2rem;
+
   > h2 {
     color: ${({ theme }) => theme.COLORS.CAKE_200};
 
@@ -43,6 +45,7 @@ export const Title = styled.div`
 
   @media (min-width: ${DEVICE_BREACKPOINTS.MD}) {
     width: 34.7rem;
+    margin-bottom: 0;
   }
 `;
 
@@ -66,12 +69,31 @@ export const Brand = styled.div`
 
 export const Section = styled.section`
   width: 100%;
-  background-color: ${({ theme }) => theme.COLORS.DARK_700};
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  > h3 {
+    text-align: center;
+    font-size: ${({ theme }) => theme.FONT_SIZE.XLARGE};
+    font-weight: 500;
+
+    display: none;
+  }  
 
   @media (min-width: ${DEVICE_BREACKPOINTS.MD}) {
     width: 35.6rem;
-  };
 
+    background-color: ${(({ theme }) => theme.COLORS.DARK_700)};
+
+    border-radius: 1.6rem;
+    padding: 4.8rem;
+
+    > h3 {
+      display: block;
+    }
+  };
 
   @media (min-width: ${DEVICE_BREACKPOINTS.LG}) {
     width: 47.5rem;
@@ -80,16 +102,7 @@ export const Section = styled.section`
 `;
 
 export const Form = styled.form`
-  > h3 {
-    font-size: ${({ theme }) => theme.FONT_SIZE.XLARGE};
-    font-weight: 500;
-
-    display: none;
-  }
-
-  @media (min-width: ${DEVICE_BREACKPOINTS.MD}) {
-    > h3 {
-      display: block;
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 `;
