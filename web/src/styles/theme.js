@@ -37,8 +37,8 @@ export default {
   },
 
     FONT_FAMILY: {
-      MAIN_TEXT: "font-family: 'Poppins', sans-serif",
-      TITLE_TEXT: "'Roboto', sans-serif",
+      MAIN_TEXT: "'Poppins', sans-serif",
+      MAIN_TITLE: "'Roboto', sans-serif",
     },
 
     FONT_SIZE: {

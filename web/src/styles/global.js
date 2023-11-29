@@ -17,7 +17,11 @@ export default createGlobalStyle`
     font-size: ${({ theme }) => theme.FONT_SIZE.REGULAR};
     font-weight: 400;
 
-    color: ${({ theme }) => theme.COLORS.LIGH_100};
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+  }
+
+  h1 {
+    font-family: ${({ theme }) => theme.FONT_FAMILY.MAIN_TITLE};
   }
 
   body {
