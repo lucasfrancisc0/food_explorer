@@ -3,8 +3,9 @@ import { Container, Brand, Form, Title, Section } from "./styles";
 import logo from '../../assets/logo.svg';
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { ButtonText } from "../../components/ButtonText";
 
-import { Envelope, Lock } from "@phosphor-icons/react";
+import { Envelope, Lock, ArrowLeft } from "@phosphor-icons/react";
 
 
 export function SignIn() {
@@ -44,6 +45,11 @@ export function SignIn() {
             />
 
           </Form>
+
+          <ButtonText
+            icon={ArrowLeft}
+            title="Criar uma conta"
+          />
         </Section>
       </main>
 

@@ -13,6 +13,13 @@ export const Container = styled.button`
   font-size: 1.4rem;
   font-weight: 500;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+
+  cursor: pointer;
+
   > svg{
     font-size: 22px;
   }

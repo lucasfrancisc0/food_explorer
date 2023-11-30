@@ -1,4 +1,5 @@
 import { Container } from "./styles";
+import { CircleNotch } from "@phosphor-icons/react"
 
 export function Button({ icon : Icon, title, loading = false, ...rest}){
   return(
@@ -8,11 +9,11 @@ export function Button({ icon : Icon, title, loading = false, ...rest}){
       disabled={loading}
     >
       {
-        Icon && <Icon/>
+        loading ? <CircleNotch/> : Icon && <Icon/>
       }
 
       {
-        loading ? 'Carregando' : 'Entrar'
+        loading ? 'Carregando...' : 'Entrar'
       }
 
     </Container>

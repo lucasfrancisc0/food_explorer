@@ -80,7 +80,11 @@ export const Section = styled.section`
     font-weight: 500;
 
     display: none;
-  }  
+  }
+  
+  > button {
+    margin: auto;
+  }
 
   @media (min-width: ${DEVICE_BREACKPOINTS.MD}) {
     width: 35.6rem;
